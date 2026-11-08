@@ -7,12 +7,13 @@ A one-page showcase of the themed MeshCore companion-radio apps, with screenshot
 | 🦅 USA (MeshCore Client) | [Launch](https://kq4cin.github.io/MESHCORE_SKINZ/) | [kq4cin/MESHCORE_SKINZ](https://github.com/kq4cin/MESHCORE_SKINZ) |
 | 🌮 Taco (Taco Core) | [Launch](https://kq4cin.github.io/meshcore-_skinz_taco/) | [kq4cin/meshcore-_skinz_taco](https://github.com/kq4cin/meshcore-_skinz_taco) |
 | 🛸 Alien (Galaxy Core) | [Launch](https://kq4cin.github.io/meshcore_skinz_ufo/) | [kq4cin/meshcore_skinz_ufo](https://github.com/kq4cin/meshcore_skinz_ufo) |
+| 📣 Game Day (TN Ties) | [Launch](https://kq4cin.github.io/meshcore_skinz_game_day/) | [kq4cin/meshcore_skinz_game_day](https://github.com/kq4cin/meshcore_skinz_game_day) |
 
 ## Design: the elephant & goldfish model
 
 The page is built for two kinds of visitor:
 
-- **Goldfish** have a few seconds of attention. Everything they need is in the first screen: a one-line headline, three skin cards with a screenshot, and a big **Launch** button on each. No scrolling needed.
+- **Goldfish** have a few seconds of attention. Everything they need is in the first screen: a one-line headline, four skin cards with a screenshot, and a big **Launch** button on each. No scrolling needed.
 - **Elephants** read deeply and come back. Below the fold, each skin has a full screenshot gallery (tap to enlarge), a source-code link, the shared feature list, setup and install steps, and a repo table. The site also **remembers** which skin you launched last (in `localStorage`) and offers a "Welcome back" shortcut on your next visit.
 
 ## Files

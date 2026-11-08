@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MeshCore Skinz — Themed MeshCore radio apps you can open in your browser</title>
-  <meta name="description" content="Pick a MeshCore Skinz app — USA, Taco, or Alien — and launch it in one tap. Off-grid LoRa chat and weather, runs in your browser, works offline.">
+  <meta name="description" content="Pick a MeshCore Skinz app — USA, Taco, Alien, or Game Day — and launch it in one tap. Off-grid LoRa chat and weather, runs in your browser, works offline.">
   <meta name="theme-color" content="#0b1020">
   <meta property="og:title" content="MeshCore Skinz">
-  <meta property="og:description" content="Three themed MeshCore radio clients. One tap to launch. Works offline.">
+  <meta property="og:description" content="Four themed MeshCore radio clients. One tap to launch. Works offline.">
   <meta property="og:image" content="assets/screenshots/alien/desktop.webp">
   <link rel="icon" href="assets/icons/alien/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://kq4cin.github.io">
@@ -25,6 +25,7 @@
       <a href="#usa">🦅 USA</a>
       <a href="#taco">🌮 Taco</a>
       <a href="#alien">🛸 Alien</a>
+      <a href="#gameday">📣 Game Day</a>
       <a href="#install">Install</a>
     </nav>
   </header>
@@ -33,7 +34,7 @@
     <!-- ===== GOLDFISH ZONE: everything needed to act in under 8 seconds ===== -->
     <section id="top" class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title">Pick a skin. <span class="nowrap">Tap launch.</span> <span class="nowrap">You're on the mesh.</span></h1>
-      <p class="lede">Three themed <strong>MeshCore</strong> radio apps. Chat off-grid over LoRa and get weather from your mesh bot. Opens in your browser — no download, no account.</p>
+      <p class="lede">Four themed <strong>MeshCore</strong> radio apps. Chat off-grid over LoRa and get weather from your mesh bot. Opens in your browser — no download, no account.</p>
 
       <div id="welcome-back" class="welcome-back" hidden>
         <span>👋 Welcome back! Last time you opened <strong data-slot="name"></strong>.</span>
@@ -72,6 +73,17 @@
             <h2>Alien</h2>
             <p>Neon from deep space.</p>
             <a class="btn btn-launch" data-launch="alien" href="https://kq4cin.github.io/meshcore_skinz_ufo/" rel="noopener">▶ Launch Alien</a>
+          </div>
+        </li>
+        <li class="pick pick-gameday" data-skin="gameday">
+          <a class="pick-shot" href="#gameday" aria-label="See more about the Game Day skin">
+            <img src="assets/screenshots/gameday/weather.webp" alt="Game Day skin weather screen" width="390" height="844" fetchpriority="high">
+          </a>
+          <div class="pick-body">
+            <img class="pick-icon" src="assets/icons/gameday/icon.svg" alt="" width="48" height="48">
+            <h2>Game Day</h2>
+            <p>Orange, charcoal &amp; white.</p>
+            <a class="btn btn-launch" data-launch="gameday" href="https://kq4cin.github.io/meshcore_skinz_game_day/" rel="noopener">▶ Launch Game Day</a>
           </div>
         </li>
       </ul>
@@ -155,6 +167,29 @@
       <button class="shot desktop" type="button"><img loading="lazy" src="assets/screenshots/alien/desktop.webp" alt="Alien: desktop two-pane layout" width="1280" height="800"></button>
     </section>
 
+    <section id="gameday" class="skin skin-gameday" aria-labelledby="gameday-title" data-skin="gameday">
+      <div class="skin-head">
+        <img src="assets/icons/gameday/icon.svg" alt="" width="72" height="72">
+        <div>
+          <p class="eyebrow">📣 Game Day: TN Ties</p>
+          <h2 id="gameday-title">Game Day MeshCore Client</h2>
+          <p>The same full MeshCore client in orange, charcoal, and white for game day.</p>
+        </div>
+      </div>
+      <div class="skin-actions">
+        <a class="btn btn-launch" data-launch="gameday" href="https://kq4cin.github.io/meshcore_skinz_game_day/" rel="noopener">▶ Launch the Game Day app</a>
+        <a class="btn btn-ghost" href="https://github.com/kq4cin/meshcore_skinz_game_day" rel="noopener">View source on GitHub</a>
+      </div>
+      <ul class="gallery" role="list">
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/gameday/onboarding-zip.webp" alt="Game Day: first-time setup, entering a ZIP code" width="390" height="844"></button><span>Setup</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/gameday/connect.webp" alt="Game Day: connect to a radio" width="390" height="844"></button><span>Connect</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/gameday/weather.webp" alt="Game Day: weather card" width="390" height="844"></button><span>Weather</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/gameday/thread.webp" alt="Game Day: chat thread" width="390" height="844"></button><span>Chat</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/gameday/network.webp" alt="Game Day: nearby network nodes" width="390" height="844"></button><span>Network</span></li>
+      </ul>
+      <button class="shot desktop" type="button"><img loading="lazy" src="assets/screenshots/gameday/desktop.webp" alt="Game Day: desktop two-pane layout" width="1280" height="800"></button>
+    </section>
+
     <section class="features" aria-labelledby="features-title">
       <h2 id="features-title">Every skin can do all of this</h2>
       <p class="section-lede">The look is different. The features are the same.</p>
@@ -193,7 +228,7 @@
         </article>
         <article>
           <h3>Try more than one</h3>
-          <p>Each skin is its own app with its own settings. You can install all three side by side.</p>
+          <p>Each skin is its own app with its own settings. You can install all four side by side.</p>
         </article>
       </div>
     </section>
@@ -207,6 +242,7 @@
             <tr><th scope="row">🦅 USA (MeshCore Client)</th><td><a data-launch="usa" href="https://kq4cin.github.io/MESHCORE_SKINZ/" rel="noopener">kq4cin.github.io/MESHCORE_SKINZ</a></td><td><a href="https://github.com/kq4cin/MESHCORE_SKINZ" rel="noopener">kq4cin/MESHCORE_SKINZ</a></td></tr>
             <tr><th scope="row">🌮 Taco (Taco Core)</th><td><a data-launch="taco" href="https://kq4cin.github.io/meshcore-_skinz_taco/" rel="noopener">kq4cin.github.io/meshcore-_skinz_taco</a></td><td><a href="https://github.com/kq4cin/meshcore-_skinz_taco" rel="noopener">kq4cin/meshcore-_skinz_taco</a></td></tr>
             <tr><th scope="row">🛸 Alien (Galaxy Core)</th><td><a data-launch="alien" href="https://kq4cin.github.io/meshcore_skinz_ufo/" rel="noopener">kq4cin.github.io/meshcore_skinz_ufo</a></td><td><a href="https://github.com/kq4cin/meshcore_skinz_ufo" rel="noopener">kq4cin/meshcore_skinz_ufo</a></td></tr>
+            <tr><th scope="row">📣 Game Day (TN Ties)</th><td><a data-launch="gameday" href="https://kq4cin.github.io/meshcore_skinz_game_day/" rel="noopener">kq4cin.github.io/meshcore_skinz_game_day</a></td><td><a href="https://github.com/kq4cin/meshcore_skinz_game_day" rel="noopener">kq4cin/meshcore_skinz_game_day</a></td></tr>
           </tbody>
         </table>
       </div>
