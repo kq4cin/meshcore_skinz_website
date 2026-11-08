@@ -3,6 +3,7 @@
     usa: { name: "the USA app", url: "https://kq4cin.github.io/MESHCORE_SKINZ/" },
     taco: { name: "the Taco app", url: "https://kq4cin.github.io/meshcore-_skinz_taco/" },
     alien: { name: "the Alien app", url: "https://kq4cin.github.io/meshcore_skinz_ufo/" },
+    gameday: { name: "the Game Day app", url: "https://kq4cin.github.io/meshcore_skinz_game_day/" },
   };
   const KEY = "meshcore-skinz:last";
 

@@ -12,6 +12,8 @@
   --taco-2: #7a4a24;
   --alien: #39ff9c;
   --alien-2: #8a5cff;
+  --gameday: #ff8200;
+  --gameday-2: #4b4b4b;
   color-scheme: dark;
 }
 
@@ -71,7 +73,10 @@ main > section { padding: clamp(40px, 7vw, 80px) clamp(16px, 4vw, 40px); max-wid
 }
 .welcome-back[hidden] { display: none; }
 
-.picker { list-style: none; padding: 0; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 2vw, 24px); }
+.picker { list-style: none; padding: 0; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 2vw, 24px); }
+@media (max-width: 1040px) and (min-width: 761px) {
+  .picker { grid-template-columns: repeat(2, 1fr); max-width: 720px; }
+}
 @media (max-width: 760px) {
   .picker { grid-template-columns: 1fr; max-width: 440px; }
   .picker { gap: 10px; }
@@ -98,6 +103,7 @@ main > section { padding: clamp(40px, 7vw, 80px) clamp(16px, 4vw, 40px); max-wid
 .pick-usa { --accent: var(--usa); }
 .pick-taco { --accent: var(--taco); }
 .pick-alien { --accent: var(--alien); }
+.pick-gameday { --accent: var(--gameday); }
 .pick.is-last::before {
   content: "Last opened"; position: absolute; top: 10px; left: 10px; z-index: 2;
   background: var(--focus); color: #000; font-size: .75rem; font-weight: 700; padding: 3px 8px; border-radius: 999px;
@@ -132,6 +138,7 @@ main > section { padding: clamp(40px, 7vw, 80px) clamp(16px, 4vw, 40px); max-wid
 .skin-usa { --accent: var(--usa); }
 .skin-taco { --accent: var(--taco); }
 .skin-alien { --accent: var(--alien); }
+.skin-gameday { --accent: var(--gameday); }
 .skin-head { display: flex; gap: 20px; align-items: center; }
 .skin-head img { border-radius: 18px; flex-shrink: 0; box-shadow: 0 8px 28px -6px color-mix(in srgb, var(--accent) 70%, transparent); }
 .skin-head h2 { margin: 0 0 6px; font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
