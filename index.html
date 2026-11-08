@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeshCore Skinz — Themed MeshCore radio apps you can open in your browser</title>
+  <meta name="description" content="Pick a MeshCore Skinz app — USA, Taco, or Alien — and launch it in one tap. Off-grid LoRa chat and weather, runs in your browser, works offline.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="MeshCore Skinz">
+  <meta property="og:description" content="Three themed MeshCore radio clients. One tap to launch. Works offline.">
+  <meta property="og:image" content="assets/screenshots/alien/desktop.webp">
+  <link rel="icon" href="assets/icons/alien/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://kq4cin.github.io">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MeshCore Skinz home">
+      <span class="brand-mark" aria-hidden="true">📡</span>
+      <span>MeshCore <strong>Skinz</strong></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#usa">🦅 USA</a>
+      <a href="#taco">🌮 Taco</a>
+      <a href="#alien">🛸 Alien</a>
+      <a href="#install">Install</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== GOLDFISH ZONE: everything needed to act in under 8 seconds ===== -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Pick a skin. <span class="nowrap">Tap launch.</span> <span class="nowrap">You're on the mesh.</span></h1>
+      <p class="lede">Three themed <strong>MeshCore</strong> radio apps. Chat off-grid over LoRa and get weather from your mesh bot. Opens in your browser — no download, no account.</p>
+
+      <div id="welcome-back" class="welcome-back" hidden>
+        <span>👋 Welcome back! Last time you opened <strong data-slot="name"></strong>.</span>
+        <a class="btn btn-small" data-slot="link" href="#" rel="noopener">Open it again →</a>
+      </div>
+
+      <ul class="picker" role="list">
+        <li class="pick pick-usa" data-skin="usa">
+          <a class="pick-shot" href="#usa" aria-label="See more about the USA skin">
+            <img src="assets/screenshots/usa/weather.webp" alt="USA skin weather screen" width="390" height="844" fetchpriority="high">
+          </a>
+          <div class="pick-body">
+            <img class="pick-icon" src="assets/icons/usa/icon.svg" alt="" width="48" height="48">
+            <h2>USA</h2>
+            <p>Stars &amp; stripes.</p>
+            <a class="btn btn-launch" data-launch="usa" href="https://kq4cin.github.io/MESHCORE_SKINZ/" rel="noopener">▶ Launch USA</a>
+          </div>
+        </li>
+        <li class="pick pick-taco" data-skin="taco">
+          <a class="pick-shot" href="#taco" aria-label="See more about the Taco skin">
+            <img src="assets/screenshots/taco/weather.webp" alt="Taco skin weather screen" width="390" height="844" fetchpriority="high">
+          </a>
+          <div class="pick-body">
+            <img class="pick-icon" src="assets/icons/taco/icon.svg" alt="" width="48" height="48">
+            <h2>Taco</h2>
+            <p>Warm tortilla tones.</p>
+            <a class="btn btn-launch" data-launch="taco" href="https://kq4cin.github.io/meshcore-_skinz_taco/" rel="noopener">▶ Launch Taco</a>
+          </div>
+        </li>
+        <li class="pick pick-alien" data-skin="alien">
+          <a class="pick-shot" href="#alien" aria-label="See more about the Alien skin">
+            <img src="assets/screenshots/alien/weather.webp" alt="Alien skin weather screen" width="390" height="844" fetchpriority="high">
+          </a>
+          <div class="pick-body">
+            <img class="pick-icon" src="assets/icons/alien/icon.svg" alt="" width="48" height="48">
+            <h2>Alien</h2>
+            <p>Neon from deep space.</p>
+            <a class="btn btn-launch" data-launch="alien" href="https://kq4cin.github.io/meshcore_skinz_ufo/" rel="noopener">▶ Launch Alien</a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="chips" role="list" aria-label="At a glance">
+        <li>📶 Works offline</li>
+        <li>🔓 No account</li>
+        <li>🔵 Bluetooth or USB</li>
+        <li>🌦️ Mesh weather</li>
+      </ul>
+      <p class="scroll-hint"><a href="#usa">Want the details? Scroll on ↓</a></p>
+    </section>
+
+    <!-- ===== ELEPHANT ZONE: depth for readers and returning visitors ===== -->
+    <section id="usa" class="skin skin-usa" aria-labelledby="usa-title" data-skin="usa">
+      <div class="skin-head">
+        <img src="assets/icons/usa/icon.svg" alt="" width="72" height="72">
+        <div>
+          <p class="eyebrow">🦅 The original skin</p>
+          <h2 id="usa-title">MeshCore Client — USA</h2>
+          <p>A stars-and-stripes MeshCore companion-radio client. It's the base project the other skins are built from.</p>
+        </div>
+      </div>
+      <div class="skin-actions">
+        <a class="btn btn-launch" data-launch="usa" href="https://kq4cin.github.io/MESHCORE_SKINZ/" rel="noopener">▶ Launch the USA app</a>
+        <a class="btn btn-ghost" href="https://github.com/kq4cin/MESHCORE_SKINZ" rel="noopener">View source on GitHub</a>
+      </div>
+      <ul class="gallery" role="list">
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/usa/onboarding-zip.webp" alt="USA: first-time setup, entering a ZIP code" width="390" height="844"></button><span>Setup</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/usa/connect.webp" alt="USA: connect to a radio" width="390" height="844"></button><span>Connect</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/usa/weather.webp" alt="USA: weather card" width="390" height="844"></button><span>Weather</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/usa/thread.webp" alt="USA: chat thread" width="390" height="844"></button><span>Chat</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/usa/network.webp" alt="USA: nearby network nodes" width="390" height="844"></button><span>Network</span></li>
+      </ul>
+      <button class="shot desktop" type="button"><img loading="lazy" src="assets/screenshots/usa/desktop.webp" alt="USA: desktop two-pane layout" width="1280" height="800"></button>
+    </section>
+
+    <section id="taco" class="skin skin-taco" aria-labelledby="taco-title" data-skin="taco">
+      <div class="skin-head">
+        <img src="assets/icons/taco/icon.svg" alt="" width="72" height="72">
+        <div>
+          <p class="eyebrow">🌮 Taco Core</p>
+          <h2 id="taco-title">Taco Core Client</h2>
+          <p>The same full MeshCore client, wrapped in a warm, taco-themed look.</p>
+        </div>
+      </div>
+      <div class="skin-actions">
+        <a class="btn btn-launch" data-launch="taco" href="https://kq4cin.github.io/meshcore-_skinz_taco/" rel="noopener">▶ Launch the Taco app</a>
+        <a class="btn btn-ghost" href="https://github.com/kq4cin/meshcore-_skinz_taco" rel="noopener">View source on GitHub</a>
+      </div>
+      <ul class="gallery" role="list">
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/taco/onboarding-zip.webp" alt="Taco: first-time setup, entering a ZIP code" width="390" height="844"></button><span>Setup</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/taco/connect.webp" alt="Taco: connect to a radio" width="390" height="844"></button><span>Connect</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/taco/weather.webp" alt="Taco: weather card" width="390" height="844"></button><span>Weather</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/taco/thread.webp" alt="Taco: chat thread" width="390" height="844"></button><span>Chat</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/taco/network.webp" alt="Taco: nearby network nodes" width="390" height="844"></button><span>Network</span></li>
+      </ul>
+      <button class="shot desktop" type="button"><img loading="lazy" src="assets/screenshots/taco/desktop.webp" alt="Taco: desktop two-pane layout" width="1280" height="800"></button>
+    </section>
+
+    <section id="alien" class="skin skin-alien" aria-labelledby="alien-title" data-skin="alien">
+      <div class="skin-head">
+        <img src="assets/icons/alien/icon.svg" alt="" width="72" height="72">
+        <div>
+          <p class="eyebrow">🛸 Galaxy Core</p>
+          <h2 id="alien-title">Galaxy Core Client</h2>
+          <p>The same full MeshCore client with an alien and UFO theme.</p>
+        </div>
+      </div>
+      <div class="skin-actions">
+        <a class="btn btn-launch" data-launch="alien" href="https://kq4cin.github.io/meshcore_skinz_ufo/" rel="noopener">▶ Launch the Alien app</a>
+        <a class="btn btn-ghost" href="https://github.com/kq4cin/meshcore_skinz_ufo" rel="noopener">View source on GitHub</a>
+      </div>
+      <ul class="gallery" role="list">
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/alien/onboarding-zip.webp" alt="Alien: first-time setup, entering a ZIP code" width="390" height="844"></button><span>Setup</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/alien/connect.webp" alt="Alien: connect to a radio" width="390" height="844"></button><span>Connect</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/alien/weather.webp" alt="Alien: weather card" width="390" height="844"></button><span>Weather</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/alien/thread.webp" alt="Alien: chat thread" width="390" height="844"></button><span>Chat</span></li>
+        <li><button class="shot" type="button"><img loading="lazy" src="assets/screenshots/alien/network.webp" alt="Alien: nearby network nodes" width="390" height="844"></button><span>Network</span></li>
+      </ul>
+      <button class="shot desktop" type="button"><img loading="lazy" src="assets/screenshots/alien/desktop.webp" alt="Alien: desktop two-pane layout" width="1280" height="800"></button>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title">Every skin can do all of this</h2>
+      <p class="section-lede">The look is different. The features are the same.</p>
+      <ul class="feature-grid" role="list">
+        <li><span aria-hidden="true">📡</span><h3>Connect your radio</h3><p>Pair over Bluetooth or plug in with USB.</p></li>
+        <li><span aria-hidden="true">💬</span><h3>Messages</h3><p>Channels and direct messages, with unread badges and delivery status.</p></li>
+        <li><span aria-hidden="true">🌦️</span><h3>Weather</h3><p>Sends your ZIP code to your mesh weather bot and shows the reply as a card.</p></li>
+        <li><span aria-hidden="true">🗺️</span><h3>Network</h3><p>See nearby companions, repeaters, and rooms. Send adverts. Tap a node to message it.</p></li>
+        <li><span aria-hidden="true">🪪</span><h3>Contact cards</h3><p>Share and add contacts using the MeshCore app's link format.</p></li>
+        <li><span aria-hidden="true">📍</span><h3>Map</h3><p>See contacts that share a GPS position on an OpenStreetMap map, cached for offline use.</p></li>
+        <li><span aria-hidden="true">📶</span><h3>Works offline</h3><p>Install it once and it keeps working with no internet.</p></li>
+        <li><span aria-hidden="true">🔓</span><h3>Private</h3><p>No account, no server. Your messages and settings stay on your device.</p></li>
+      </ul>
+    </section>
+
+    <section id="install" class="install" aria-labelledby="install-title">
+      <h2 id="install-title">Get started in five steps</h2>
+      <ol class="steps">
+        <li><strong>Open a skin.</strong> Tap any <em>Launch</em> button on this page.</li>
+        <li><strong>Enter your ZIP code or town.</strong> Use whatever your weather bot understands, such as <code>30301</code> or <code>Atlanta, GA</code>.</li>
+        <li><strong>Enter your weather bot's channel.</strong> The default is <code>#weather</code>. The app adds it to your radio for you.</li>
+        <li><strong>Tap Connect</strong> and pick your radio.</li>
+        <li><strong>Open the Weather tab</strong> and tap <em>Get weather</em>.</li>
+      </ol>
+
+      <div class="install-cards">
+        <article>
+          <h3>Add it to your phone's home screen</h3>
+          <p><strong>iPhone / iPad (Safari):</strong> tap the Share button, then <em>Add to Home Screen</em>.</p>
+          <p><strong>Android (Chrome):</strong> tap the ⋮ menu, then <em>Install app</em> or <em>Add to Home screen</em>.</p>
+        </article>
+        <article>
+          <h3>Install on a computer</h3>
+          <p>In Chrome or Edge, click the install icon at the right end of the address bar.</p>
+          <p>Bluetooth and USB radio connections need Chrome, Edge, or another Chromium browser.</p>
+        </article>
+        <article>
+          <h3>Try more than one</h3>
+          <p>Each skin is its own app with its own settings. You can install all three side by side.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="repos" aria-labelledby="repos-title">
+      <h2 id="repos-title">All the repos</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Skin</th><th scope="col">App</th><th scope="col">Source code</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">🦅 USA (MeshCore Client)</th><td><a data-launch="usa" href="https://kq4cin.github.io/MESHCORE_SKINZ/" rel="noopener">kq4cin.github.io/MESHCORE_SKINZ</a></td><td><a href="https://github.com/kq4cin/MESHCORE_SKINZ" rel="noopener">kq4cin/MESHCORE_SKINZ</a></td></tr>
+            <tr><th scope="row">🌮 Taco (Taco Core)</th><td><a data-launch="taco" href="https://kq4cin.github.io/meshcore-_skinz_taco/" rel="noopener">kq4cin.github.io/meshcore-_skinz_taco</a></td><td><a href="https://github.com/kq4cin/meshcore-_skinz_taco" rel="noopener">kq4cin/meshcore-_skinz_taco</a></td></tr>
+            <tr><th scope="row">🛸 Alien (Galaxy Core)</th><td><a data-launch="alien" href="https://kq4cin.github.io/meshcore_skinz_ufo/" rel="noopener">kq4cin.github.io/meshcore_skinz_ufo</a></td><td><a href="https://github.com/kq4cin/meshcore_skinz_ufo" rel="noopener">kq4cin/meshcore_skinz_ufo</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>MeshCore Skinz by <a href="https://github.com/kq4cin" rel="noopener">KQ4CIN</a> · <a href="https://github.com/kq4cin/meshcore_skinz_website" rel="noopener">Site source</a></p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Screenshot">
+    <form method="dialog"><button class="lightbox-close" aria-label="Close">✕</button></form>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
